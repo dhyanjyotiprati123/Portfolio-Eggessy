@@ -1,0 +1,23 @@
+
+.container{
+    width: 75%;
+    margin: 0 auto;  
+
+    @include Responsive(large){
+        width: 86%;
+    }
+    @include Responsive(small){
+        width: 95%;
+    }
+}
+
+.wrapper{
+    margin-top: 12rem;
+
+    @include Responsive(large){
+        margin-top: 9rem;
+    }
+    @include Responsive(small){
+        margin-top: 6rem;
+    }
+}

@@ -1,0 +1,58 @@
+
+.portcard{
+    width: 35rem;
+    height: 50rem;
+    padding: 2rem;
+    background: rgba($color-bg-varient, .8);
+    border: 1px solid $color-light;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 400ms ease-in;
+
+    &:hover{
+        border-color: rgba($color-primary-varient, .7);
+        background: transparent;
+    }
+
+    @include Responsive(small){
+        width: 30rem;
+    }
+
+    &-figure{
+        width: 100%;
+
+        @include Responsive(small){
+            height: auto;
+        }
+    }
+    &-img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
+    &-info{
+        padding: 3rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    &-title{
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: $color-primary;
+    }
+    &-para{
+        font-size: 1.7rem;
+        font-weight: 300;
+        color: $color-light;
+    }
+    &-control{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1rem;
+    }
+}

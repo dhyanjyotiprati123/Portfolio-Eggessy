@@ -1,0 +1,48 @@
+
+.srvCard{
+    background: rgba($color-bg-varient, .7);
+    border-radius: 0 0 3rem 3rem;
+    border: 1px solid $color-light;
+    height: fit-content;
+    transition: all 400ms ease-in;
+
+    @include Responsive(large){
+        height: auto;
+    }
+
+    &:hover{
+        background: transparent;
+        border-color: $color-primary;
+    }
+
+    &-header{
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 2rem;
+        color: $color-bg;
+        background: $color-primary;
+        border-radius: 0 0 4rem 4rem;
+        box-shadow: 2px 2px 20px  rgba(255,255,255, .2);
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0 5rem 2rem;
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 0 1rem 0;
+    }
+    &-icon{
+        font-size: 1.7rem;
+        color: $color-primary;
+    }
+    &-para{
+        font-size: 1.8rem;
+        color: $color-light;
+    }
+}

@@ -1,0 +1,28 @@
+
+@import "./abstract/mixin";
+@import "./abstract/variables";
+
+@import "./basic/basic";
+@import "./basic/layout";
+@import "./basic/typography";
+
+@import "./components/about";
+@import "./components/contact";
+@import "./components/experience";
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/services";
+@import "./components/testimonial";
+@import "./components/footer";
+@import "./components/portfolio";
+
+@import "./pages/landing";
+
+@import "./smallcomponents/cts";
+@import "./smallcomponents/headerSocial";
+@import "./smallcomponents/aboutCard";
+@import "./smallcomponents/expcard";
+@import "./smallcomponents/serviceCard";
+@import "./smallcomponents/portcard";
+@import "./smallcomponents/testicard";
+@import "./smallcomponents/ccard";

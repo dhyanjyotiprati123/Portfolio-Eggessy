@@ -1,0 +1,46 @@
+
+.tcard{
+    display: flex;
+    flex-direction: column;
+    background: $color-bg;
+    border-radius: 3rem;
+    border: 1px solid $color-light;
+    transition: all 400ms ease-in;
+    padding: 5rem 2rem;
+
+    @include Responsive(small){
+        padding: 3rem 1rem;
+    }
+
+    &:hover{
+        background: rgba(255,255,255, .4);
+        border-color: $color-primary;
+    }
+
+    &-figure{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &-img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 3rem solid rgba($color-bg-varient, .7);
+    }
+    &-info{
+        text-align: center;
+    }
+    &-header{
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-primary;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+    &-para{
+        font-size: 1.6rem;
+        color: $color-light;
+        text-transform: capitalize;
+    }
+}

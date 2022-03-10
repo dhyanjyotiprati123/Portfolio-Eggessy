@@ -1,0 +1,62 @@
+
+.header{
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @include Responsive(small){
+        height: 100vh;
+    }
+
+    &-heading{
+       font-size: 5rem;
+       font-weight: 400;
+       color: $color-primary;
+    }
+    &-subheading{
+       font-size: 2rem;
+       font-weight: 300;
+    }
+    &-middleheading{
+       font-size: 2rem;
+       font-weight: 400;
+       text-transform: capitalize;
+    }
+    &-imgContainer{
+        background: linear-gradient($color-primary, transparent);
+        width: 35rem;
+        height: 48rem;
+        position: absolute;
+        left: calc(50% - 17.5rem);
+        margin-top: 5rem;
+        border-radius: 15rem 15rem 0 0;
+        padding: 3rem 0 0 0;
+        overflow: hidden;
+
+        @include Responsive(small){
+            width: 30rem;
+            height: 45rem;
+            left: calc(50% - 15rem);
+        }
+    }
+    &-img{
+        width: 100%;
+        object-fit: cover;
+    }
+    &-scroll{
+        position: absolute;
+        bottom: 10rem;
+        right: 30rem;
+        transform: rotate(90deg);
+        font-size: 2rem;
+
+        @include Responsive(large){
+            right: 10rem;
+        }
+        @include Responsive(small){
+            display: none;
+        }
+    }
+}

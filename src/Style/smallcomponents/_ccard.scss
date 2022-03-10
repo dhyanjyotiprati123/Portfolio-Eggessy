@@ -1,0 +1,33 @@
+
+.cCard{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 2rem;
+    background: rgba($color-blue-dark, .7);
+    width: 25rem;
+    height: 15rem;
+
+    &-icon{
+        font-size: 3rem;
+        @include Flex;
+        color: $color-white;
+    }
+    &-contacts{
+        text-align: center;
+    }
+    &-title{
+        font-size: 2.3rem;
+        color: white;
+    }
+    &-para{
+        font-size: 1.7rem;
+        color: $color-light;
+    }
+    &-msg{
+        font-size: 1.6rem;
+        color: $color-primary;
+        text-align: center;
+    }
+}

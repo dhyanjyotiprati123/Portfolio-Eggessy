@@ -1,0 +1,22 @@
+
+.expCard{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: center;
+
+    &-icon{
+        font-size: 2.5rem;
+        color: $color-primary;
+    }
+    &-title{
+        font-size: 2rem;
+        color: rgba($color-primary, .8);
+        font-weight: 300;
+    }
+    &-desc{
+        font-size: 1.7rem;
+        color: $color-light;
+    }
+}

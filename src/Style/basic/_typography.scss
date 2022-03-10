@@ -1,0 +1,44 @@
+
+.section-header{
+    color: $color-primary;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+.section-subheader{
+    color: $color-light;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+
+    @include Responsive(small){
+        margin-bottom: 1rem;
+    }
+}
+
+.btn{
+    width: max-content;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    color: $color-primary;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 400ms ease-in;
+
+    &:hover{
+        background-color: $color-white;
+        color: $color-bg;
+        border-color: transparent;
+    }
+
+    &-primary{
+        background: $color-primary;
+        color: $color-bg;
+    }
+    &-dark{
+        background: rgba(0,0,0, .1);
+        color: $color-primary;
+    }
+}

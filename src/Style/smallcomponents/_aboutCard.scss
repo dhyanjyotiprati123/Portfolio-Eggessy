@@ -1,0 +1,28 @@
+
+.aboutCard{
+    width: 20rem;
+    height: 20rem;
+    background: $color-bg-varient;
+    @include Flex;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-icon{
+        font-size: 3rem;
+        color: $color-primary;
+    }
+    &-info{
+        text-align: center;
+    }
+    &-title{
+        font-size: 2rem;
+        font-weight: 300;
+        color: $color-primary;
+    }
+    &-para{
+        font-size: 1.6rem;
+        color: $color-light;
+    }
+}

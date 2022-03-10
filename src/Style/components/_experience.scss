@@ -1,0 +1,47 @@
+
+.experience{
+    min-height: 100vh;
+
+    &-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 5rem 0;
+
+        @include Responsive(large){
+            grid-template-columns: 1fr;
+        }
+    }
+    &-inner{
+        background: rgba($color-bg, .7);
+        padding: 5rem;
+        border-radius: 3rem;
+        border: 1px solid transparent;
+        transition: all 400ms ease-in;
+        cursor: default;
+
+        @include Responsive(small){
+            padding: 2rem;
+        }
+
+        &:hover{
+            background: transparent;
+            border-color: $color-light;
+        }
+    }
+    &-title{
+        text-align: center;
+        font-size: 2rem;
+        color: $color-primary;
+        margin-bottom: 3rem;
+        font-weight: 300;
+    }
+    &-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include Responsive(small){
+            grid-template-columns: 1fr;
+        }
+    }
+}

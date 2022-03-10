@@ -1,0 +1,27 @@
+
+.headerSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    position: absolute;
+    bottom: 4rem;
+    left: 30rem;
+    font-size: 2.5rem;
+
+    &::after{
+        content: "";
+        width: 2px;
+        height: 5rem;
+        background: $color-primary;
+    }
+
+    @include Responsive(large){
+        left: 10rem;
+        bottom: 7rem;
+    }
+
+    @include Responsive(small){
+        display: none;
+    }
+}

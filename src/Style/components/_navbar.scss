@@ -1,0 +1,42 @@
+
+.navbar{
+    background: rgba(0,0,0, 0.3);
+    display: block;
+    width: max-content;
+    padding: 2rem 3.5rem;
+    position: fixed;
+    font-size: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: 5rem;
+    backdrop-filter: blur(15px);
+
+    &-links{
+        padding: 1.4rem;
+        background: rgba(255,255,255, .1);
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        @include Flex;
+        transition: all 400ms ease-in;
+        border: 1px solid transparent;
+
+        &:hover{
+            background-color: rgba(0,0,0, .1);
+            color: $color-white;
+        }
+
+        @include Responsive(small){
+            padding: 1rem;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    &-active{
+        border: 1px solid rgba(255,255,255, .3);
+        box-shadow: 2px 2px 15px 2px rgba(255,255,255, .1);
+    }
+}
